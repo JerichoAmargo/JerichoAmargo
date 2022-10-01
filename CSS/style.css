@@ -1,0 +1,456 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    margin:0px;
+    padding:0px;
+    font-family: "Poppins";
+}
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#main{ 
+    width: 100%;
+    height:100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.02);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000 ;
+}
+.logo img{
+    height: 45px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.hey{
+    color: #dbeb00;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #000000;
+}
+nav ul li a:hover{
+    background-color: #464646;
+    color: #ffffff;
+    box-shadow: 5px 10px 30px(64,198,196,0.3);
+    transition: all ease 0.2s;
+}
+.model img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+.model{
+    width: 500px;
+    height: 500px;
+}
+.content{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-text{
+    width: 500px;
+}
+.main-text h1{
+    font-size: 3.5rem;
+    color: #1c3548;
+    margin: 0px 0px 10px 0px;
+    line-height: 60px;
+}
+.main-text p{
+    color: #747474;
+}
+.portfolio-btn{
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+}
+.portfolio-btn:hover{
+    background-color: #303030;
+    transition: all ease o.2s;
+}
+#skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto auto 50px auto;
+}
+.skill-text{
+    width: 400px;
+}
+.skill-img{
+    width: 600px;
+    height: 600px;
+}
+.skill-img img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+.skill-heading span{
+    color:#36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+.skill-heading h2{
+    color: #1c3548;
+    font-size: 3.3rem;
+    margin:0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0px;
+    flex-direction: column;
+}
+.about-heading span{
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+.about-heading h3{
+    color:1c3548;
+    font-size: 3rem;
+    margin:0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.about-container{
+    width: 100%;
+    height: 430px;
+    background-color: #020000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin: 2% auto 20px auto;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-container img{
+    height: 400px;
+}
+.about-text{
+    width: 650px;
+    color: #ffffff;
+}
+.educ-heading h3{
+    color: #1c3548;
+    font-size: 3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.educ-heading span{
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+#educ{
+    width: 100%;
+    border-top:1px solid rgba(58,58,58,0.03);
+    border-bottom:1px solid rgba(58,58,58,0.03);
+    padding: 50px 0px;
+
+}
+.educ-heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutme {
+    margin-top: 80px;
+    clear:both;
+    flex-direction: left;
+    margin-top: 10px;
+  }
+  .main2 .aboutme .me{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 38px;
+  }
+  .main2 .aboutme .me h5{
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin: 10px 0px;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: auto;
+  }
+  .main2 .aboutme .me p{
+    color:rgb(0, 0, 0);
+    margin-left: 10px;
+    font-size: smaller;
+  }
+  .me h6{
+    margin-top: -20px;
+}
+  .contact-heading h3{
+    color: #1c3548;
+    font-size: 3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.contact-heading span{
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+#contact{
+    width: 100%;
+    border-top:1px solid rgba(58,58,58,0.03);
+    border-bottom:1px solid rgba(58,58,58,0.03);
+    padding: 50px 0px;
+
+}
+.contact-heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.icon{
+    padding: 0 20px 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(232, 232, 232, 0.5);
+    background-color: #ffffff;
+}
+footer p{
+    margin: 15px 0px;
+    color: #5f5f5f;
+}
+nav .menu-btn{
+    display:none;
+}
+@media(max-width:1140px){
+    .content{
+        width: 100%;
+    }
+    .model{
+        width: 400px;
+        height: 400px;
+    }
+    .main-text, .model{
+        margin:10px;
+    }
+    .content2{
+        width: 100%;
+    }
+    .ab{
+        width: 400px;
+        height: 400px;
+    }
+    .about-text, .ab{
+        margin:10px;
+    }
+    .skill-img{
+        width: 400px;
+        height: 400px;
+    }
+    .main2{
+        flex-grow: 0.5;
+    }
+}
+@media(max-width:900px){
+    nav{
+        justify-content: space-between;
+        height: 65px;
+        padding: 0px 30px;
+    }
+    .logo img{
+        height: 35px;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background-color: #000000;
+        border-bottom: 4px solid #1db096;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu li{
+        width: 100%;
+    }
+    nav .menu li a{
+        width: 100%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 25px;
+        border: 1px solid rgba(87, 84, 84, 0.03);
+    }
+    nav .menu-icon{
+        cursor: pointer;
+        float: right;
+        padding: 28px 20px;
+        position:relative;
+        user-select: none;
+    }
+    nav .menu-icon .nav-icon{
+        background-color: #333333;
+        display: block;
+        height: 2px;
+        position:relative;
+        transition: background 0.2s ease-out;
+        width: 18px;
+    }
+    nav .menu-icon .nav-icon:before,
+    nav .menu-icon .nav-icon:after{
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width: 100%;
+    }
+    nav .menu-icon .nav-icon:before{
+        top:5px;
+    }
+    nav .menu-icon .nav-icon:after{
+        top:-5px;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+        transform:rotate(45deg);
+        top: 0;
+    }
+    nav .menu-btn{
+        display: none;
+    }
+    nav .menu-btn:checked ~  .menu{
+        display: block;
+    }
+    #skills{
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 40px;
+    }
+    .skill-text{
+        width: 400px;
+    }
+    .skill-img{
+        width: 40%;
+        height: 300px;
+    }    
+    .skill-img img{
+        object-fit: cover;
+        object-position: left;
+    }
+    .about-heading h3,
+    .educ-heading h3,
+    #contact h3{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .about-heading{
+        text-align: center;
+        padding: 0px 15px;
+    }
+}
+@media(max-width:720px){
+    .model{
+        display: none;
+    }
+    .main-text{
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%,-50%);
+    }
+    #contact img{
+        height: 30px;
+        width: 30px;
+    }
+    footer{
+        justify-content: center;
+        padding: 10px 20px;
+    }
+    footer p{
+        text-align: center;
+    }
+    .about-btn{
+        margin:0px;
+    }
+}
+@media(max-width:530px){
+    .skill-img{
+        display: none;
+    }
+    .skill-text{
+        width: 85%;
+    }
+    #skills{
+        margin:0px;
+    }
+}
